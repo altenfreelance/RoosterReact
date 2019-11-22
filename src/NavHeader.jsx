@@ -1,24 +1,25 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 export default class NavHeader extends Component {
   render() {
     return (
-      <header className="masthead mb-auto">
+      <header className="masthead mb-auto rounded px-3 py-2">
         <div className="inner">
-          <h3 className="masthead-brand">RR</h3>
+          <h3 className="masthead-brand">Rooster Ridge</h3>
           <nav className="nav nav-masthead justify-content-center">
-            <a className="nav-link active" href="#">
+            <NavLink to="/home" activeClassName="active" replace>
               Home
-            </a>
-            <a className="nav-link" href="#">
+            </NavLink>
+            <NavLink to="/shows" activeClassName="active" replace>
               Shows
-            </a>
-            <a className="nav-link" href="#">
+            </NavLink>
+            <NavLink to="/members" activeClassName="active" replace>
               Members
-            </a>
-            <a className="nav-link" href="#">
+            </NavLink>
+            <NavLink to="/contact" activeClassName="active" replace>
               Contact
-            </a>
+            </NavLink>
           </nav>
         </div>
       </header>
