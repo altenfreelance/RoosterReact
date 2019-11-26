@@ -1,17 +1,22 @@
 import React, { Component } from "react";
 import YouTube from "react-youtube";
+// import ReactPlayer from "react-player";
 
 export default class VidContainer extends Component {
   state = {
-      newest_id:''
-  }
+    newest_id: ""
+  };
 
-    render() {
-    const opts = {
-      width: "100%",
-      height: "500"
-    };
-    return <YouTube videoId={this.state.newest_id} opts={opts} />;
+  render() {
+    // const opts = {
+    //   width:"100%",
+    //   height:"400px"
+    // };
+    return (
+      <div className="iframe-container">
+        <YouTube videoId={this.state.newest_id} />
+      </div>
+    );
   }
 
   componentDidMount() {
@@ -20,7 +25,7 @@ export default class VidContainer extends Component {
     )
       .then(response => response.json())
       .then(response =>
-        this.setState({newest_id: response.items[0].id.videoId})
+        this.setState({ newest_id: response.items[0].id.videoId })
       );
   }
 }
