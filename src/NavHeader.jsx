@@ -20,6 +20,9 @@ export default class NavHeader extends Component {
             <NavLink to="/contact" activeClassName="active" replace>
               Contact
             </NavLink>
+            <NavLink to="/music" activeClassName="active" replace>
+              Music
+            </NavLink>
           </nav>
         </div>
       </header>

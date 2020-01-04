@@ -1,15 +1,23 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Member from './Member'
-import andrew_img from './images/Andrew.jpg'
-import jacob_img from './images/Jacob.jpg'
-import bryce_img from './images/Bryce.jpg'
-import greg_img from './images/Greg.jpg'
-import joey_img from './images/Joey.jpg'
-import vince_img from './images/Vince.jpg'
-import blum_img from './images/Dave.jpg'
-import bauer_img from './images/OLAS.jpg'
-export default class Members extends Component {
-    render() {
+// import andrew_img from 'images/Andrew.jpg'
+// import jacob_img from './images/Jacob.jpg'
+// import bryce_img from './images/Bryce.jpg'
+// import greg_img from './images/Greg.jpg'
+// import joey_img from './images/Joey.jpg'
+// import vince_img from './images/Vince.jpg'
+// import blum_img from './images/Dave.jpg'
+// import bauer_img from './images/OLAS.jpg'
+function Members(){
+    const andrew_img = 'images/Andrew.jpg';
+    const jacob_img = 'images/Jacob.jpg'
+    const bryce_img = 'images/Bryce.jpg'
+    const greg_img = 'images/Greg.jpg'
+    const joey_img = 'images/Joey.jpg'
+    const vince_img = 'images/Vince.jpg'
+    const blum_img = 'images/Dave.jpg'
+    const bauer_img = 'images/OLAS.jpg'
+
         return (
             <div>
                 <h1>Meet the Band</h1>
@@ -25,5 +33,7 @@ export default class Members extends Component {
                 </div>
             </div>
         )
-    }
+    
 }
+
+export default Members;

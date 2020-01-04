@@ -3,8 +3,6 @@ import "./index.css";
 import Footer from "./Footer";
 import Members from "./Members";
 import NavHeader from "./NavHeader";
-import logo_img from './images/RR_lemon.png'
-
 
 import {
   Route,
@@ -15,8 +13,11 @@ import {
 import Events from "./Events";
 import VidContainer from './VidContainer';
 import Contact from "./Contact";
+import Songs from "./components/Songs"
 
 function App() {
+  const logo_img = 'images/RR_lemon.png'
+
   return (
     <div className="cover-container container-fluid text-center d-flex w-100 h-100 p-3 mx-auto flex-column">
       <Router>
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route exact path="/Contact">
             <Contact />
+          </Route>
+          <Route exact path="/Music">
+            <Songs src="audio/BloodInTheSoil.mp3"/>
           </Route>
           <Route path="*">
             <Redirect to="/home" />

@@ -1,12 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import Event from "./Event";
-import cappys_1 from "./images/group_color.jpg";
-import cappys_12_20 from "./images/cappys_12_20.jpg";
-import cappys_12_31 from "./images/cappys_12_31.jpg";
 
 
-export default class Events extends Component {
-  render() {
+export default function Events(){
+
+    const cappys_12_20 = "images/cappys_12_20.jpg";
+    const cappys_12_31 = "images/cappys_12_31.jpg";
+    
+
     return (
       <div>
         <h1>Upcoming Events</h1>
@@ -29,4 +30,4 @@ export default class Events extends Component {
       </div>
     );
   }
-}
+
