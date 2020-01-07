@@ -33,7 +33,7 @@ html,
 body, html {
   /* background-color:darkgray; */
   height: 100%; 
-  background: url(images/farm.jpeg) no-repeat center center fixed; 
+  background: url('/images/farm.jpeg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
